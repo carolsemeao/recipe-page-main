@@ -160,14 +160,18 @@ p {
 hr {
   border: 0;
   border-top: 1px solid rgb(var(--clr-light-800));
+  margin-top: 0;
 }
 
 ul, ol {
   padding-left: 1em;
+  margin-block: 0;
 }
 ul li, ol li {
-  margin-bottom: 0.5rem;
   padding-left: var(--spacing-normal);
+}
+ul li:not(:last-of-type), ol li:not(:last-of-type) {
+  margin-bottom: 0.5rem;
 }
 ul li::marker, ol li::marker {
   font-weight: var(--fw-bold);

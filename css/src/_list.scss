@@ -1,8 +1,11 @@
 ul, ol {
     padding-left: 1em;
+    margin-block: 0;
 
     li {
-        margin-bottom: .5rem;
+        &:not(:last-of-type) {
+            margin-bottom: .5rem;
+        }
         padding-left: var(--spacing-normal);
 
         &::marker {
