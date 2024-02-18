@@ -26,16 +26,8 @@ h2 {
     font-size: var(--fs-md);
 }
 
-h3 {
-    font: {
-        size: var(--fs-sm);
-        weight: var(--fw-semi-bold);
-    };
-    margin-bottom: var(--spacing-normal);
-    color: rgb(var(--clr-accent));
-}
 
-h1, h2, h3 {
+h1, h2, p.text-highlight {
     line-height: var(--lh-1);
     margin-top: 0;
 }
@@ -60,6 +52,15 @@ body {
 p {
     margin-bottom: .5rem;
     line-height: var(--lh-2);
+
+    &.text-highlight {
+        font: {
+            size: var(--fs-sm);
+            weight: var(--fw-semi-bold);
+        };
+        margin-bottom: var(--spacing-normal);
+        color: rgb(var(--clr-accent));
+    }
 }
 
 hr {
