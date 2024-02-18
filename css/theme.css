@@ -98,16 +98,16 @@ textarea:not([rows]) {
   --spacing-lg: 2.5rem;
   --spacing-xl: 3.75rem;
   --ff-main: "Outfit", sans-serif;
-  --ff-accent: "Young Serif", serif;
+  --ff-accent: "Young Serif";
 }
 
 @font-face {
-  font-family: var(--ff-main);
-  src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format("truetype");
+  font-family: "Outfit";
+  src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format("truetype");
 }
 @font-face {
-  font-family: var(--ff-accent);
-  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
+  font-family: "Young Serif";
+  src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
 }
 h1, h2 {
   font-family: var(--ff-accent);
@@ -123,7 +123,6 @@ h1 {
 h2 {
   color: rgb(var(--clr-primary));
   font-size: var(--fs-md);
-  font-weight: var(--fw-semi-bold);
 }
 
 h3 {
@@ -154,6 +153,7 @@ body {
 
 p {
   margin-bottom: 0.5rem;
+  line-height: var(--lh-2);
 }
 
 hr {

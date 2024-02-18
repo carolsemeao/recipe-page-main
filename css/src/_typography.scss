@@ -1,11 +1,11 @@
 @font-face {
-    font-family: var(--ff-main);
-    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format('truetype');
+    font-family: 'Outfit';
+    src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format('truetype');
 }
 
 @font-face {
-    font-family: var(--ff-accent);
-    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf) format('truetype');
+    font-family: 'Young Serif';
+    src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf) format('truetype');
 }
 
 h1, h2 {
@@ -23,10 +23,7 @@ h1 {
 
 h2 {
     color: rgb(var(--clr-primary));
-    font: {
-        size: var(--fs-md);
-        weight: var(--fw-semi-bold);
-    };
+    font-size: var(--fs-md);
 }
 
 h3 {
@@ -61,6 +58,7 @@ body {
 
 p {
     margin-bottom: .5rem;
+    line-height: var(--lh-2);
 }
 
 hr {
