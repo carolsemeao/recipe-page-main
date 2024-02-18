@@ -1,0 +1,16 @@
+ul, ol {
+    padding-left: 1em;
+
+    li {
+        margin-bottom: .5rem;
+        padding-left: var(--spacing-normal);
+
+        &::marker {
+            font-weight: var(--fw-bold);
+        }
+    }
+}
+
+ol li::marker {
+    color: rgb(var(--clr-primary));
+}

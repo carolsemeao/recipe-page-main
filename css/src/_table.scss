@@ -1,0 +1,32 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: none;
+    margin-top: var(--spacing-xs);
+
+    tr {
+        &:not(:last-child) {
+            border-bottom: 1px solid rgb(var(--clr-light-800));
+
+            td {
+                padding-bottom: var(--spacing-xxs);
+            }
+        }
+
+        &:not(:first-child) {
+            td {
+                padding-top: var(--spacing-xxs);
+            }
+        }
+
+        td {
+            &:first-child {
+                padding-left: var(--spacing-md);
+            }
+
+            &:last-child {
+                padding-right: var(--spacing-md);
+            }
+        }
+    }
+}
